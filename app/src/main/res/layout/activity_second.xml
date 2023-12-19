@@ -86,7 +86,7 @@
         android:id="@+id/etFlatNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="House No.,Flat No.(Required)"
+        android:hint="House No./Flat No.(Required)"
         android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFlatNo"/>

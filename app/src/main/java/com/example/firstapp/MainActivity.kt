@@ -20,14 +20,15 @@ class MainActivity : AppCompatActivity() {
         registerHere.setOnClickListener{
             val intent = Intent(this@MainActivity,RegistrationActivity::class.java)
             startActivity(intent)
+
         }
 
         buttonLogin.setOnClickListener{
             if (editTextEmail.text.isNullOrBlank() || editTextPassword.text.isNullOrBlank()){
-                Toast.makeText(this@MainActivity, "Please enter email and password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Please Enter email and password", Toast.LENGTH_SHORT).show()
             }
             else if(editTextEmail!!.text!!.length <= 6 || editTextPassword.text!!.length <= 6){
-                Toast.makeText(this@MainActivity, "Please enter email and password min 6 digit", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Please Enter email and password min 6 digit", Toast.LENGTH_SHORT).show()
         }
             else{
                 val intent = Intent(this@MainActivity,HomeActivity::class.java)
