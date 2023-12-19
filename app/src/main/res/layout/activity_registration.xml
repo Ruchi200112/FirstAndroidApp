@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/textViewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlreadyRegistered" />
+
+    <TextView
+        android:id="@+id/textViewFirstname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name:"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegistration"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextFirstname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your First name"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegistration"
+        app:layout_constraintStart_toStartOf="@+id/textViewRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstname" />
+
+    <TextView
+        android:id="@+id/textViewEmail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstname" />
+
+    <EditText
+        android:id="@+id/editTextEmail1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
+
+    <TextView
+        android:id="@+id/textViewPassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail1"/>
+
+    <EditText
+        android:id="@+id/editTextPassword1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPassword1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassword1"/>
+
+    <Button
+        android:id="@+id/buttonLogin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:backgroundTint="#C8C6C6"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword1"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword1" />
+
+    <TextView
+        android:id="@+id/textViewAlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already Registered? Login here"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
