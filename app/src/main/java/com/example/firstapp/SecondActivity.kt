@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
 
             }
             else{
-                Toast.makeText(this@SecondActivity, "Saved Successfully...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@SecondActivity, "Saved Successfully..", Toast.LENGTH_SHORT).show()
             }
 
         }
