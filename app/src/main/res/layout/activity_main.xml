@@ -37,9 +37,10 @@
         android:layout_margin="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintStart_toStartOf="@+id/textViewLogin"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLogin"
         app:layout_constraintTop_toBottomOf="@id/textViewLogin"
         android:layout_marginTop="10dp"
-        android:hint="Please Enter Password"
+        android:hint="Please Enter Email"
         android:inputType="textPassword">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -56,6 +57,7 @@
         android:layout_margin="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
         app:layout_constraintTop_toBottomOf="@id/editEmail"
         android:layout_marginTop="10dp"
         android:hint="Please Enter Password"
@@ -73,21 +75,23 @@
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="@color/black"
         android:backgroundTint="#D1CECE"
-        app:layout_constraintStart_toStartOf="@+id/editPassword"
-        app:layout_constraintTop_toBottomOf="@id/editPassword"
-        android:layout_marginTop="10dp"/>
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword" />
 
     <TextView
         android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New to Tutlane?Register here"
+        android:text="@string/new_user_register_here"
         android:textColor="@color/purple_700"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

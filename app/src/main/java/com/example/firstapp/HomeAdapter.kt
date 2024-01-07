@@ -21,7 +21,7 @@ class HomeAdapter(private val context: Context) : RecyclerView.Adapter<HomeAdapt
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int){
-        holder.productName.text = "Ruchika $position"
+        holder.productName.text = context.getString(R.string.login)
         holder.button.setOnClickListener {
         val intent = Intent (context,SecondActivity::class.java)
         context.startActivity(intent)
