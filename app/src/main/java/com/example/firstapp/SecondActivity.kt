@@ -22,7 +22,7 @@ class SecondActivity : AppCompatActivity() {
                 Toast.makeText(this@SecondActivity, "Please check your zipcode", Toast.LENGTH_SHORT).show()
             }
             else{
-                Toast.makeText(this@SecondActivity, "Saved successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@SecondActivity, "Saved Successfully...", Toast.LENGTH_SHORT).show()
             }
 
 
