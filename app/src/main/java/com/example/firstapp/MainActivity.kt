@@ -14,10 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val receivedValue = intent.getStringExtra("value")
+        Log.d("gggg", "onCreate: $receivedValue")
+       val registerHere : TextView? = findViewById(R.id.textViewRegister)
 
-       val registerHere : TextView = findViewById(R.id.textViewRegister)
-
-        registerHere.setOnClickListener{
+        registerHere?.setOnClickListener{
             val intent = Intent(this@MainActivity,RegistrationActivity::class.java)
             startActivity(intent)
 

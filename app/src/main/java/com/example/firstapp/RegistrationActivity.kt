@@ -10,12 +10,14 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_registration.*
 
 class RegistrationActivity : AppCompatActivity() {
+    private var a : String? = "3"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
-
+        Log.d("hhhh", "onCreate: ${a?.length}")
         textViewAlreadyRegistered.setOnClickListener{
             val intent1 = Intent(this,MainActivity::class.java)
+            intent1.putExtra("value",a)
             startActivity(intent1)
         }
 
